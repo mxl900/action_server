@@ -8,15 +8,23 @@ The goal of this lab is to use lidar alarm to scan walls, and stop the robot rig
 
 
 ## Usage
+
+First,
 `roslaunch stdr_launchers server_with_map_and_gui_plus_robot.launch` to start the stdr simulation
-`rosrun action_server action_lidar` to start lidar alarm first, then 
-`rosrun action_server action_server` to start the server, and:
-`rosrun action_server action_client` to start the client.
+
+Second,
+`rosrun action_server action_lidar` to start lidar alarm, then
+
+Third,
+`rosrun action_server action_server` to start the server, and
+
+`rosrun action_server action_client` to start the client
 
 You can monitor the communications with:
 `rostopic echo example_action/goal`
 and
 `rostopic echo example_action/result`
+
 
 
 ## Running tests/demos
